@@ -146,11 +146,11 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="border-b border-slate-800/80 bg-[#0B111D] sticky top-0 z-40 backdrop-blur-md">
+    <header className="border-b border-slate-800/80 bg-[#0B111D] sticky top-0 z-40 backdrop-blur-md w-full overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-center justify-between py-3 gap-3">
+        <div className="flex flex-col md:flex-row md:items-center justify-between py-3 gap-3 min-w-0">
           {/* Brand & Market Identity */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 min-w-0">
             <div className="p-2 rounded-lg bg-slate-900 border border-slate-700/80 text-sky-400">
               <Activity className="w-5 h-5" aria-hidden="true" />
             </div>
@@ -174,7 +174,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           {/* Telemetry & Controls */}
-          <div className="flex items-center flex-wrap gap-2.5 sm:gap-4 text-xs font-mono">
+          <div className="flex items-center flex-wrap gap-2 sm:gap-3 text-xs font-mono min-w-0">
             {/* Timestamp & Clock */}
             <div className="flex items-center gap-3 bg-slate-900/90 px-3 py-1.5 rounded-lg border border-slate-800 text-slate-300">
               <div className="flex items-center gap-1.5">

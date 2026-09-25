@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    overflow-x: hidden;
+    /* Prevent any element from overflowing the viewport width */
+    max-width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 0;
+  }
+
   :root {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   }
@@ -15,6 +33,18 @@
 /* Numeric alignment */
 .tabular-nums {
   font-variant-numeric: tabular-nums;
+}
+
+/* Prevent any child from breaking layout width */
+.contain-layout {
+  overflow: hidden;
+  min-width: 0;
+}
+
+/* Word break utility for long text in constrained cells */
+.break-word {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* High contrast ticker styles */

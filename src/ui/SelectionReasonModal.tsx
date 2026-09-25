@@ -43,7 +43,7 @@ export const SelectionReasonModal: React.FC<SelectionReasonModalProps> = ({ item
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="relative w-full max-w-lg bg-[#0F172A] border border-slate-700/80 rounded-xl shadow-2xl p-6 text-slate-200">
+      <div className="relative w-full max-w-lg bg-[#0F172A] border border-slate-700/80 rounded-xl shadow-2xl p-6 text-slate-200 max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-start justify-between border-b border-slate-800 pb-4 mb-5">
           <div className="flex items-center gap-3">
@@ -163,7 +163,7 @@ export const SelectionReasonModal: React.FC<SelectionReasonModalProps> = ({ item
               <Info className="w-4 h-4 text-sky-400" />
               <span>Baseline Return Calculation</span>
             </div>
-            <div className="text-xs font-mono text-slate-300 bg-slate-900/90 p-2.5 rounded border border-slate-800/80 overflow-x-auto">
+            <div className="text-xs font-mono text-slate-300 bg-slate-900/90 p-2.5 rounded border border-slate-800/80 break-all whitespace-pre-wrap">
               {reason.calculationFormula}
             </div>
             <div className="flex items-center justify-between text-xs text-slate-400 pt-1">

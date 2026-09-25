@@ -123,7 +123,7 @@ export default function App() {
   const lastUpdated = strategyResult?.timestamp || Date.now();
 
   return (
-    <div className="min-h-screen bg-[#090D14] text-slate-100 flex flex-col font-sans selection:bg-sky-500/20">
+    <div className="min-h-screen w-full max-w-full bg-[#090D14] text-slate-100 flex flex-col font-sans selection:bg-sky-500/20 overflow-x-hidden">
       {/* Screen Reader Live Region for meaningful ranking shifts */}
       <ScreenReaderAnnouncer announcements={strategyResult?.announcementEvents || []} />
 
@@ -203,7 +203,7 @@ export default function App() {
       </div>
 
       {/* Main Content Dashboard */}
-      <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-5">
+      <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full min-w-0 py-5">
         {/* Mobile / Tablet Segmented View Switcher */}
         <div className="lg:hidden flex items-center justify-between pb-4">
           <div className="flex items-center gap-1 p-1 bg-slate-900 border border-slate-800 rounded-lg text-xs font-mono">
