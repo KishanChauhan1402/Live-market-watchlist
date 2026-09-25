@@ -1,0 +1,6 @@
+{
+  "name": "NSE Market Watch - Real-Time Sector & Stock Watchlist",
+  "description": "High-performance real-time NSE stock market watchlist portal continuously ranking top and bottom performing sectors and stocks with transparent selection criteria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
